@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.1.8763.0"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>8c5f3552-d92f-4416-8b68-550747674721</id>
+      <revision>26</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.1.8763.0" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8763.0" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.8763.0" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.8763.0" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="9" width="104" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Atomic masses</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="27" width="118" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Ca</e>
+          <e type="operand">40.08</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="27" width="118" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">O</e>
+          <e type="operand">15.999</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="72" width="153" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Molecular mass of CaO</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="90" width="235" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">mmol_CaO</e>
+          <e type="operand">Ca</e>
+          <e type="operand">O</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.0561</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operand" style="unit">mol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="144" width="188" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Mass of unit formula for  CaO</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="171" width="132" height="47" color="#000000" fontSize="10" showInputData="false">
+      <math optimize="2">
+        <input>
+          <e type="operand">mCaO</e>
+          <e type="operand">mmol_CaO</e>
+          <e type="operand" style="unit">N.A</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="216" width="193" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Average atomic mass for CaO</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="234" width="232" height="42" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Mav</e>
+          <e type="operand">mCaO</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.6561</e>
+          <e type="operand">10</e>
+          <e type="operand">26</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">kg</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="279" width="785" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" width="785" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>
+            <span style="font-weight: bold;">Elastic constants:</span> https://next-gen.materialsproject.org/materials/mp-2605</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="324" width="106" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C11</e>
+          <e type="operand">203</e>
+          <e type="operand" style="unit">GPa</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="144" top="324" width="98" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C12</e>
+          <e type="operand">57</e>
+          <e type="operand" style="unit">GPa</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="279" top="324" width="98" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">C44</e>
+          <e type="operand">75</e>
+          <e type="operand" style="unit">GPa</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="360" width="655" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Derived constants. B: bulk modulus, Gv shear modulus (Voigt equation), Gr shear modulus (Reuss equation)</p>
+        </content>
+      </text>
+    </region>
+    <region left="495" top="369" width="344" height="49" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Gr</e>
+          <e type="operand">5</e>
+          <e type="operand">C11</e>
+          <e type="operand">C12</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">C44</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">4</e>
+          <e type="operand">C44</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="operand">C11</e>
+          <e type="operand">C12</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7.4187</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Pa</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="378" width="247" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">B</e>
+          <e type="operand">C11</e>
+          <e type="operand">2</e>
+          <e type="operand">C12</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">GPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">105.6667</e>
+        </result>
+      </math>
+    </region>
+    <region left="297" top="378" width="187" height="43" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">Gv</e>
+          <e type="operand">C11</e>
+          <e type="operand">C12</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">3</e>
+          <e type="operand">C44</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">5</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="432" width="267" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Shear modulus (Voigt-Reuss-Hill equation)</p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="450" width="194" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">G</e>
+          <e type="operand">Gv</e>
+          <e type="operand">Gr</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">GPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">74.1935</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="495" width="107" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Young Modulus</p>
+        </content>
+      </text>
+    </region>
+    <region left="315" top="495" width="100" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Poisson's ratio</p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="513" width="207" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E</e>
+          <e type="operand">9</e>
+          <e type="operand">B</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">G</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="operand">B</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">G</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">GPa</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">180.366</e>
+        </result>
+      </math>
+    </region>
+    <region left="324" top="513" width="155" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">v</e>
+          <e type="operand">E</e>
+          <e type="operand">2</e>
+          <e type="operand">G</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2155</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="567" width="162" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Unit cell volume for  CaO</p>
+        </content>
+      </text>
+    </region>
+    <region left="225" top="567" width="186" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Primitive cell volume for CaO</p>
+        </content>
+      </text>
+    </region>
+    <region left="450" top="567" width="371" height="23" color="#000000" fontSize="10">
+      <text lang="ita" fontFamily="Arial" fontSize="14">
+        <content>
+          <p style="font-size: 10px;">from https://next-gen.materialsproject.org/materials/mp-2605</p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="585" width="124" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">vol</e>
+          <e type="operand">111.08</e>
+          <e type="operand" style="unit">Å</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="243" top="585" width="100" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">vol_p</e>
+          <e type="operand">vol</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="639" width="105" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>density for CaP</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="657" width="191" height="50" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ρ</e>
+          <e type="operand">4</e>
+          <e type="operand">mCaO</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">vol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">g</e>
+          <e type="operand" style="unit">cm</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">3.3533</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="711" width="169" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Longitudinal wave velocity</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="738" width="274" height="73" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">vL</e>
+          <e type="operand">3</e>
+          <e type="operand">B</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">4</e>
+          <e type="operand">G</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">3</e>
+          <e type="operand">ρ</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">7811.0047</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="846" width="133" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Shear wave velocity</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="873" width="203" height="71" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">vS</e>
+          <e type="operand">G</e>
+          <e type="operand">ρ</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4703.7714</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1098" width="101" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Sound velocity</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1107" width="302" height="80" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">va</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">2</e>
+          <e type="operand">vS</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operand">vL</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">5201.6502</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">s</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1188" width="133" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Grunisen parameter</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1197" width="242" height="72" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">γ</e>
+          <e type="operand">9</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">vL</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">4</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">vS</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">vL</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">2</e>
+          <e type="operand">vS</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1.3471</e>
+        </result>
+      </math>
+    </region>
+    <region left="360" top="1242" width="15" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p></p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1269" width="255" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Number of atoms in the conventional cell</p>
+        </content>
+      </text>
+    </region>
+    <region left="279" top="1269" width="230" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Number of atoms in the primitive cell</p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="1314" width="54" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">80</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="297" top="1314" width="92" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">np</e>
+          <e type="operand">n</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">40</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1359" width="142" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" width="142" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Debye's Temperature</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1368" width="283" height="69" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θD</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operand">2</e>
+          <e type="operand" style="unit">k</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">va</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">6</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">n</e>
+          <e type="operand">vol</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1388.1462</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="432" top="1422" width="130" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Room Temperature</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1440" width="144" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Acoustic Temperature</p>
+        </content>
+      </text>
+    </region>
+    <region left="441" top="1440" width="74" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">T</e>
+          <e type="operand">300</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1458" width="175" height="67" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">θa</e>
+          <e type="operand">θD</e>
+          <e type="operand">np</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">405.8964</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region top="1530" color="#000000">
+      <area single="true" collapsed="true" />
+    </region>
+    <region left="261" top="1548" width="150" height="32" color="#000000" fontSize="16" isBreakable="false">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-weight: bold; font-size: 16px;">Slack' model </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1593" width="627" height="96" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">kL</e>
+          <e type="operand">0.849</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">20</e>
+          <e type="operand">π</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">1</e>
+          <e type="operand">0.514</e>
+          <e type="operand">γ</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">0.228</e>
+          <e type="operand">γ</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">k</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θa</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Mav</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">k</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">vol_p</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operand">γ</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">θa</e>
+          <e type="operand">T</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">W</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">37.4813</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1737" width="124" height="23" color="#000000" fontSize="10">
+      <text lang="ita" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Debye's frequency</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1764" width="249" height="44" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ωD</e>
+          <e type="operand">θD</e>
+          <e type="operand" style="unit">k</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="bracket">(</e>
+          <e type="operand" style="unit">h</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">4.6034</e>
+          <e type="operand">10</e>
+          <e type="operand">12</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
