@@ -6,3 +6,4 @@ You have three folders:
 3_Thermal Conductivity Calculations: it contains the files for the calculation of thermal conductivities of pure and doped cubic oxides 
 by using revised Slack equation and revised klemens equation rispectively.
 All the files can be opened by the free software SMath Solver (https://smath.com/en-US/).
+For further details read the related paper at https://www.nature.com/articles/s41598-024-63302-6 and please cite it ;)
